@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Gurjeet Singh Portfolio</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="#home">PORTFOLIO<span>.</span></a>
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience & Education</a></li>
+
+      <li><a href="#project">Projects</a></li>
+
+      <li><a href="#service">Services</a></li>
+    </ul>
+    <div class="nav__btns">
+      <button class="btn" onclick="openPopup()">Hire Me</button>
+    </div>
+  </nav>
+
+  <header id="home">
+    <div class="section__container header__container">
+      <div class="header__content">
+        <h2>Hi, I am</h2>
+        <h1>Gurjeet Singh</h1>
+        <h3>Java Full Stack Developer</h3>
+        <p>
+          A passionate Java Full Stack Developer skilled in building robust, scalable web applications using Java,
+          Spring Boot, React.js, and MySQL. Dedicated to writing clean code, solving real-world problems, and delivering
+          end-to-end solutions. Let’s build something amazing together!
+        </p>
+        <div class="header__btns">
+          <a href="assets/Gurjeet_Singh_Resume.pdf" download class="btn">Download Resume</a>
+          <!-- <button class="btn">Download Resume</button> -->
+          <button class="btn" onclick="openPopup()">Contact Me</button>
+        </div>
+        <!-- <small style="display:block; margin-top: 5px;">*On iPhone, the resume may open in a new tab. Tap the Share icon to save it.</small> -->
+
+      </div>
+      <div class="header__image">
+        <img src="assets/header_2.png" alt="header" />
+
+      </div>
+      
+    </div>
+  </header>
+
+  <section class="section__container intro__container" id="intro">
+    <div class="intro__image">
+      <img src="assets/header_1.png" alt="intro" />
+    </div>
+    <div class="intro__content">
+      <p class="section__subheader">My Intro</p>
+      <h2 class="section__header">About Me</h2>
+      <p class="intro__description">
+        I'm Gurjeet Singh, a dedicated Java Full Stack Developer with a strong foundation in building dynamic and
+        scalable web applications. With expertise in Java, Spring Boot, React.js, MySQL, and RESTful APIs, I bring both
+        backend strength and frontend finesse to every project. I focus on writing clean, maintainable code and enjoy
+        turning complex requirements into user-friendly solutions that deliver real value.
+      </p>
+      <div class="intro__grid">
+        <h5>
+          <span><i class="ri-user-line"></i></span> Name
+        </h5>
+        <span>:</span>
+        <p>Gurjeet Singh</p>
+        <h5>
+          <span><i class="ri-phone-line"></i></span> Phone
+        </h5>
+        <span>:</span>
+        <p>9324362662</p>
+        <h5>
+          <span><i class="ri-mail-line"></i></span> Email
+        </h5>
+        <span>:</span>
+        <p>singhgurjeet101003@gmail.com</p>
+      </div>
+      <h4>My Interests</h4>
+      <div class="intro__flex">
+        <div>
+          <span><i class="ri-football-line"></i></span> Football
+        </div>
+        <div>
+          <span><i class="ri-code-line"></i></span> Coding
+        </div>
+        <div>
+          <span><i class="ri-film-line"></i></span> Video Editing
+        </div>
+        <!-- <div>
+          <span><i class="ri-headphone-line"></i></span> Music
+        </div> -->
+        <div>
+          <span><i class="ri-briefcase-3-line"></i></span> Travelling
+        </div>
+
+
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+
+
+  <section class="choose" id="skills">
+    <div class="section__container choose__container">
+      <p class="section__subheader">Why Choose Me</p>
+      <h2 class="section__header">My Experties Area</h2>
+      <div class="choose__grid">
+        <div class="choose__card">
+          <div>
+            <h4>HTML, CSS, Bootstrap</h4>
+            <h4>90%</h4>
+          </div>
+          <div class="choose__progress" style="--progress: 90%"></div>
+        </div>
+        <div class="choose__card">
+          <div>
+            <h4>JavaScript (ES6+)</h4>
+            <h4>80%</h4>
+          </div>
+          <div class="choose__progress" style="--progress: 80%"></div>
+        </div>
+        <div class="choose__card">
+          <div>
+            <h4>MySQL / SQL Databases</h4>
+            <h4>95%</h4>
+          </div>
+          <div class="choose__progress" style="--progress: 95%"></div>
+        </div>
+        <div class="choose__card">
+          <div>
+            <h4>React.js (Hooks, Components, CRUD)</h4>
+            <h4>80%</h4>
+          </div>
+          <div class="choose__progress" style="--progress: 80%"></div>
+        </div>
+        <div class="choose__card">
+          <div>
+            <h4>Java (Core + OOPs Concepts)</h4>
+            <h4>90%</h4>
+          </div>
+          <div class="choose__progress" style="--progress: 90%"></div>
+        </div>
+        <div class="choose__card">
+          <div>
+            <h4>Spring Boot & REST APIs</h4>
+            <h4>85%</h4>
+          </div>
+          <div class="choose__progress" style="--progress: 85%"></div>
+        </div>
+        <div class="choose__card">
+          <div>
+            <h4>Git & GitHub</h4>
+            <h4>95%</h4>
+          </div>
+          <div class="choose__progress" style="--progress: 95%"></div>
+        </div>
+        <div class="choose__card">
+          <div>
+            <h4>Problem Solving & Debugging</h4>
+            <h4>75%</h4>
+          </div>
+          <div class="choose__progress" style="--progress: 75%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Education -->
+
+  <section class="section__container journey__container" id="experience">
+    <p class="section__subheader">My Qualifications</p>
+    <h2 class="section__header">Awesome Journey</h2>
+    <div class="journey__grid">
+      <div>
+        <div class="journey__grid__header">
+          <span><i class="ri-graduation-cap-line"></i></span> Education
+        </div>
+        <div class="journey__card">
+          <span><i class="ri-circle-fill"></i></span>
+          <div>
+            <h4>Bachelor's in Information Technology</h4>
+            <h5>7.33 CGPA</h5>
+            <p>
+              <span><i class="ri-calendar-fill"></i></span> 2021-2024
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <span><i class="ri-circle-fill"></i></span>
+          <div>
+            <h4>HSC</h4>
+            <h5>82.33%</h5>
+            <p>
+              <span><i class="ri-calendar-fill"></i></span> 2021
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <span><i class="ri-circle-fill"></i></span>
+          <div>
+            <h4>SSC</h4>
+            <h5>73.60%</h5>
+            <p>
+              <span><i class="ri-calendar-fill"></i></span> 2019
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+
+      <div>
+        <div class="journey__grid__header">
+          <span><i class="ri-briefcase-line"></i></span> Experience
+        </div>
+
+        <div class="journey__card">
+          <span><i class="ri-circle-fill"></i></span>
+          <div>
+            <h4>Java Full Stack Development (Specialized training)</h4>
+            <h5>ItVedant Institute</h5>
+            <p>
+              <span><i class="ri-calendar-fill"></i></span> June 2024 - Present
+            </p>
+          </div>
+        </div>
+
+        <div class="journey__card">
+          <span><i class="ri-circle-fill"></i></span>
+          <div>
+            <h4>UI/UX Design Intern</h4>
+            <h5>CodSoft</h5>
+            <p>
+              <span><i class="ri-calendar-fill"></i> December 2024 - February 2025</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="journey__card">
+          <span><i class="ri-circle-fill"></i></span>
+          <div>
+            <h4>Java Intern</h4>
+            <h5>Onlei Technologies</h5>
+            <p>
+              <span><i class="ri-calendar-fill"></i></span> April 2024 - June 2024
+            </p>
+          </div>
+        </div>
+        <!-- <div class="journey__card">
+          <span><i class="ri-circle-fill"></i></span>
+          <div>
+            <h4>Java Full Stack Development (Specialized training)</h4>
+            <h5>ItVedant Institute</h5>
+            <p>
+              <span><i class="ri-calendar-fill"></i></span> June 2024 - Present
+            </p>
+          </div>
+        </div> -->
+      
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+
+  <section class="portfolio" id="project">
+    <div class="section__container portfolio__container">
+      <p class="section__subheader">My Portfolio</p>
+      <!-- <h2 class="section__header">Recent Works</h2> -->
+      <h2 class="section__header">Recent Projects</h2>
+
+      <div class="portfolio__nav">
+
+
+        <div class="portfolio__nav">
+          <button class="btn mixitup-control-active" data-filter="all">All</button>
+          <button class="btn" data-filter=".full">Full Stack</button>
+          <button class="btn" data-filter=".rest">REST API</button>
+          <button class="btn" data-filter=".frontend">Frontend</button>
+        </div>
+
+      </div>
+      <div class="portfolio__grid">
+
+        <!-- 1 -->
+        <div class="portfolio__card mix full">
+          <p class="project-title">Airline Reservation System</p>
+          <a href="https://github.com/gurjeetsinghmundra/Airline-Reservation-System" 
+          target="_blank" class="project-link">
+            <div class="project-image-wrapper">
+              <img src="assets/project_airlines.png" alt="project" />
+              <div class="overlay-text">
+                <span>Click to See</span>
+                <i class="ri-external-link-line project-icon"></i>
+
+              </div>
+              
+            </div>
+          </a>
+        </div>
+
+        <!-- 2 -->
+        <div class="portfolio__card mix frontend">
+          <p class="project-title">Amazon Clone <span class="live-badge">(Live Link)</span></p>
+          <a href="https://gurjeetsinghmundra.github.io/Amazon-Clone-Project/" target="_blank" class="project-link">
+            <div class="project-image-wrapper">
+              <img src="assets/project_amazon.png" alt="Amazon Clone" />
+              <div class="overlay-text">
+                <span>Click to See</span>
+                <i class="ri-external-link-line project-icon"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 3 -->
+        <div class="portfolio__card mix rest frontend">
+          <p class="project-title">Currency Converter<span class="live-badge">(Live Link)</span></p>
+          <a href=" https://gurjeetsinghmundra.github.io/Currency-Convertor/" target="_blank" class="project-link">
+            <div class="project-image-wrapper">
+              <img src="assets/project_currency.png" alt="Currency Converter" />
+              <div class="overlay-text">
+                <span>Click to See</span>
+                <i class="ri-external-link-line project-icon"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 4 -->
+        <div class="portfolio__card mix rest frontend">
+          <p class="project-title">Random Joke Generator<span class="live-badge">(Live Link)</span></p>
+          <a href="https://gurjeetsinghmundra.github.io/Random-Joke-Generator/" target="_blank" class="project-link">
+            <div class="project-image-wrapper">
+              <img src="assets/project_random.png" alt="Random Joke Generator" />
+              <div class="overlay-text">
+                <span>Click to See</span>
+                <i class="ri-external-link-line project-icon"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 5 -->
+        <div class="portfolio__card mix full">
+          <p class="project-title">LMS (Learning Management System)</p>
+          <a href="https://github.com/gurjeetsinghmundra/Learning-Management-System" target="_blank" class="project-link">
+            <div class="project-image-wrapper">
+              <img src="assets/project_lms.png" alt="LMS" />
+              <div class="overlay-text">
+                <span>Click to See</span>
+                <i class="ri-external-link-line project-icon"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 6 -->
+        <div class="portfolio__card mix frontend">
+          <p class="project-title">E-commerce UI Design</p>
+          <a href="#"  class="project-link">
+            <div class="project-image-wrapper">
+              <img src="assets/project_ecommerce.png" alt="E-commerce UI" />
+              <!-- <div class="overlay-text">
+                 <span>Click to See</span>
+                <i class="ri-external-link-line project-icon"></i>
+              </div> -->
+            </div>
+          </a>
+        </div>
+      </div>
+          <!-- See More -->
+        <div class="see-more-btn" style="text-align: center; margin-top: 2rem;">
+          <a href="https://github.com/gurjeetsinghmundra?tab=repositories" target="_blank" class="btn">
+            See More Projects
+          </a>
+        </div>
+
+    </div>
+  </section>
+
+
+  
+  <!-- Services -->
+
+  <section class="section__container service__container" id="service">
+    <p class="section__subheader">My Services</p>
+    <h2 class="section__header">What I Offer</h2>
+    <div class="service__grid">
+      <div class="service__card">
+        <span><i class="ri-window-fill"></i></span>
+        <h4>Custom Web Development</h4>
+        <p>
+          I develop fast, scalable, and responsive websites using Java, Spring Boot, and React.js — turning ideas into
+          fully functional, real-world web applications.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-stack-line"></i></span>
+        <h4>Full Stack Solutions</h4>
+        <p>
+          From frontend to backend, I handle complete web development — including UI design, REST API integration, and
+          database management — to deliver seamless user experiences.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-smartphone-line"></i></span>
+        <h4>Responsive UI Design</h4>
+        <p>
+          I build clean, mobile-friendly interfaces using HTML, CSS, Bootstrap, and React, ensuring websites look and
+          perform great on all screen sizes.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-database-2-fill"></i></span>
+        <h4>Database Management</h4>
+        <p>
+          Skilled in MySQL and SQL, I design and manage secure, efficient databases to support dynamic and data-driven
+          applications.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-plug-2-fill"></i></span>
+        <h4>REST API Integration</h4>
+        <p>
+          I connect frontend apps to backend services using RESTful APIs, enabling smooth and real-time data
+          communication.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-tools-fill"></i></span>
+        <h4>Code Optimization & Debugging</h4>
+        <p>
+          I improve application performance by writing clean code, fixing bugs, and optimizing logic — helping deliver
+          stable and maintainable software.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner__container">
+    <div class="banner__content">
+      <h2 class="section__header">Have A Project On Your Mind</h2>
+      <p>
+        Whether it's building powerful web applications or optimizing performance from frontend to backend, I'm here to bring your ideas to life. Let's collaborate and build something amazing!
+      </p>
+      <div class="banner__btn">
+        <button class="btn" onclick="openPopup()">Contact Me</button>
+      </div>
+    </div>
+    <div class="banner__image">
+      <img src="assets/banner_img.jpeg" alt="banner" />
+    </div>
+  </section>
+  <!--  -->
+
+  <footer>
+    <div class="section__container footer__container">
+      <h4>Gurjeet Singh</h4>
+      <ul class="footer__socials">
+        <a href="https://www.linkedin.com/in/gurjeetsinghmundra" target="_blank"><i class="ri-linkedin-fill"></i></a>
+
+        <a href="https://github.com/gurjeetsinghmundra" target="_blank"><i class="ri-github-fill"></i></a>
+
+        <a href="https://x.com/SinghGurje77904?t=TW2awt9eIHxDEO91K3stMQ&s=09" target="_blank">
+          <i class="ri-twitter-fill"></i></a>
+        <!-- <a href="#"><i class="ri-behance-fill"></i></a>
+        <a href="#"><i class="ri-dribbble-line"></i></a> -->
+
+
+      </ul>
+
+      <div class="footer__contact">
+        <a href="tel:9324362662"><i class="ri-phone-line"></i> 9324362662</a>
+        <a href="mailto:singhgurjeet101003@gmail.com"><i class="ri-mail-line"></i> singhgurjeet101003@gmail.com</a>
+      </div>
+        
+
+    </div>
+    
+    <div class="footer__bar">
+      Copyright © 2025. Developed By Gurjeet Singh Mundra.
+    </div>
+  </footer>
+
+
+  <!-- Hire me -->
+
+  <div id="popupContact" class="popup-container">
+    <div class="popup-box">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h3>Contact Me</h3>
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" pattern="[0-9]{10}" title="Enter a valid 10-digit number" placeholder="Your Contact Number" required />
+        <textarea name="message" rows="6" placeholder="Your Message" ></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formStatus" style="margin-top:10px; color:green;"></p>
+      </form>
+      
+    </div>
+  </div>
+
+  <!-- <script>
+    function openPopup() {
+      document.getElementById("popupContact").style.display = "block";
+    }
+  
+    function closePopup() {
+      document.getElementById("popupContact").style.display = "none";
+    }
+  </script> -->
+  
+
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
