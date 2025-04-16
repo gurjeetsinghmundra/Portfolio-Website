@@ -199,6 +199,7 @@ header {
   display: grid;
   gap: 2rem;
   overflow: hidden;
+  /*  */
 }
 
 .intro__image {
@@ -927,5 +928,92 @@ header {
 
   .blog__grid {
     gap: 1.5rem;
+  }
+}
+
+/* For Header Image */
+
+@media (max-width: 768px) {
+  .header__image {
+    display: none;
+  }
+}
+
+/*  */
+
+@media (max-width: 540px) {
+  .intro__description {
+    font-size: 0.95rem;
+    padding: 0 15px;
+    text-align: justify;
+    word-break: break-word;
+  }
+
+  .contact__email p {
+    font-size: 0.9rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding: 0 15px;
+  }
+
+  .intro__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .intro__image img {
+    width: 100%;
+  }
+
+  .intro__content {
+    width: 100%;
+  }
+}
+
+
+/*  */
+.email-text {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-size: 0.95rem;
+  padding: 0 10px;
+}
+
+
+/*  */
+@media (max-width: 480px) {
+  .header__btns {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .header__btns .btn {
+    width: 48%;
+    padding: 12px;
+    font-size: 0.95rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+/*  */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
+  }
+
+  .portfolio__nav {
+    flex-wrap: nowrap; /* Keep the buttons on the same line */
+    justify-content: space-between; /* Adjust button spacing */
+    width: 100%; /* Ensure the container is not wider than the screen */
+  }
+
+  .portfolio__nav .btn {
+    padding: 0.8rem; /* Adjust padding to fit the screen */
+    font-size: 1rem; /* Adjust font size */
+    flex-shrink: 1; /* Allow the buttons to shrink if necessary */
   }
 }
